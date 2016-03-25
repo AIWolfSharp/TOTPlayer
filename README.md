@@ -3,7 +3,7 @@ AIWolf player agent TOTPlayer, a participant in GAT2016 mini competition.
 
 ## How to play
 
-1. Download and unzip TOTPlayer-4.7.zip.
+1. Download and unzip [TOTPlayer-4.7.zip](https://github.com/AIWolfSharp/TOTPlayer/releases/download/v4.7/TOTPlayer-4.7.zip).
 
 1. Descend to folder TOTPlayer-4.7.
 
