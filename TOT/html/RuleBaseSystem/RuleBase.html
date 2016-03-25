@@ -1,0 +1,991 @@
+<html>
+  <head>
+    <title>RuleBaseSystem.RuleBase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="index.html">RuleBaseSystem</a> : <a href="index.html">RuleBaseSystem Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:RuleBaseSystem.RuleBase">Overview</a>
+      </p>
+      <p>
+        <a href="#T:RuleBaseSystem.RuleBase:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:RuleBaseSystem.RuleBase:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:RuleBaseSystem.RuleBase:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:RuleBaseSystem.RuleBase">RuleBase  Class</h1>
+    <p class="Summary" id="T:RuleBaseSystem.RuleBase:Summary">
+            Rule base class.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:RuleBaseSystem.RuleBase:Signature">public class  <b>RuleBase</b></div>
+    </div>
+    <div class="Remarks" id="T:RuleBaseSystem.RuleBase:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:RuleBaseSystem.RuleBase:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:RuleBaseSystem.RuleBase:Docs:Version Information">
+        <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:RuleBaseSystem.RuleBase(System.IO.Stream)">RuleBase</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>)</div>
+                </td>
+                <td>
+            Initializes a new instance of this class with XML file.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:RuleBaseSystem.RuleBase(System.String)">RuleBase</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                </td>
+                <td>
+            Initializes a new instance of this class.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:RuleBaseSystem.RuleBase.Name">Name</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+            The name of this rule base.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.AddVariable(RuleBaseSystem.Variable)">AddVariable</a>
+                  </b>(<a href="../RuleBaseSystem/Variable.html">Variable</a>)<blockquote>
+            Adds a variable to this rulebase.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.DeclareFacts()">DeclareFacts</a>
+                  </b>()<blockquote>
+            Declares the facts in this rulebase.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.ForwardChain()">ForwardChain</a>
+                  </b>()<blockquote>
+            Starts the forward chain.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.GetConflictList(System.Boolean)">GetConflictList</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;Rule&gt;</a></nobr><blockquote>
+            Returns the list of the conflicting rules.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.GetVariable(System.String)">GetVariable</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../RuleBaseSystem/Variable.html">Variable</a></nobr><blockquote>
+            Returns the variable having given name.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.GetVariableValue(System.String)">GetVariableValue</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Returns the value of the variable.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.NewFact(RuleBaseSystem.Variable,System.Object)">NewFact</a>
+                  </b>(<a href="../RuleBaseSystem/Variable.html">Variable</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../RuleBaseSystem/Fact.html">Fact</a></nobr><blockquote>
+            Creates a new fact and add it to this rulebase.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.NewRule(System.String)">NewRule</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../RuleBaseSystem/Rule.html">Rule</a></nobr><blockquote>
+            Creates a new rule and adds it to this rulebase.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause,RuleBaseSystem.Consequent)">NewRule</a>
+                  </b>(<a href="../RuleBaseSystem/Clause.html">Clause</a>, <a href="../RuleBaseSystem/Consequent.html">Consequent</a>)<nobr> : <a href="../RuleBaseSystem/Rule.html">Rule</a></nobr><blockquote>
+            Creates a new rule and adds it to this rulebase.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause[],RuleBaseSystem.Consequent)">NewRule</a>
+                  </b>(<a href="../RuleBaseSystem/Clause.html">Clause</a>[], <a href="../RuleBaseSystem/Consequent.html">Consequent</a>)<nobr> : <a href="../RuleBaseSystem/Rule.html">Rule</a></nobr><blockquote>
+            Creates a new rule and adds it to this rulebase.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause,RuleBaseSystem.Consequent)">NewRule</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../RuleBaseSystem/Clause.html">Clause</a>, <a href="../RuleBaseSystem/Consequent.html">Consequent</a>)<nobr> : <a href="../RuleBaseSystem/Rule.html">Rule</a></nobr><blockquote>
+            Creates a new rule and adds it to this rulebase.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause[],RuleBaseSystem.Consequent)">NewRule</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../RuleBaseSystem/Clause.html">Clause</a>[], <a href="../RuleBaseSystem/Consequent.html">Consequent</a>)<nobr> : <a href="../RuleBaseSystem/Rule.html">Rule</a></nobr><blockquote>
+            Creates a new rule and adds it to this rulebase.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.PrintRules()">PrintRules</a>
+                  </b>()<blockquote>
+            Writes the rules in this rule base to the console.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.PrintVariables()">PrintVariables</a>
+                  </b>()<blockquote>
+            Writes the variables of this rule base to the console.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.Reset()">Reset</a>
+                  </b>()<blockquote>
+            Resets variables, rules and facts in this rule base.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.SelectRule(System.Collections.Generic.List{RuleBaseSystem.Rule})">SelectRule</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;Rule&gt;</a>)<nobr> : <a href="../RuleBaseSystem/Rule.html">Rule</a></nobr><blockquote>
+            Returns the rule having the most antecedents.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.RuleBase.SetVariableValue(System.String,System.String)">SetVariableValue</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+            Sets the value of the variable.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:RuleBaseSystem.RuleBase:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:RuleBaseSystem.RuleBase(System.IO.Stream)">RuleBase Constructor</h3>
+        <blockquote id="C:RuleBaseSystem.RuleBase(System.IO.Stream):member">
+          <div class="msummary">
+            Initializes a new instance of this class with XML file.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>RuleBase</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> stream)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:RuleBaseSystem.RuleBase(System.IO.Stream):Parameters">
+            <dl>
+              <dt>
+                <i>stream</i>
+              </dt>
+              <dd>The stream of the rule written in XML.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:RuleBaseSystem.RuleBase(System.IO.Stream):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:RuleBaseSystem.RuleBase(System.IO.Stream):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:RuleBaseSystem.RuleBase(System.String)">RuleBase Constructor</h3>
+        <blockquote id="C:RuleBaseSystem.RuleBase(System.String):member">
+          <div class="msummary">
+            Initializes a new instance of this class.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>RuleBase</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:RuleBaseSystem.RuleBase(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>The name of this rule base.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:RuleBaseSystem.RuleBase(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:RuleBaseSystem.RuleBase(System.String):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.AddVariable(RuleBaseSystem.Variable)">AddVariable Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.AddVariable(RuleBaseSystem.Variable):member">
+          <div class="msummary">
+            Adds a variable to this rulebase.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddVariable</b> (<a href="../RuleBaseSystem/Variable.html">Variable</a> variable)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.AddVariable(RuleBaseSystem.Variable):Parameters">
+            <dl>
+              <dt>
+                <i>variable</i>
+              </dt>
+              <dd>The variable to be added.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.AddVariable(RuleBaseSystem.Variable):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.AddVariable(RuleBaseSystem.Variable):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.DeclareFacts()">DeclareFacts Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.DeclareFacts():member">
+          <div class="msummary">
+            Declares the facts in this rulebase.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeclareFacts</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.DeclareFacts():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.DeclareFacts():Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.ForwardChain()">ForwardChain Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.ForwardChain():member">
+          <div class="msummary">
+            Starts the forward chain.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ForwardChain</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.ForwardChain():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.ForwardChain():Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.GetConflictList(System.Boolean)">GetConflictList Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.GetConflictList(System.Boolean):member">
+          <div class="msummary">
+            Returns the list of the conflicting rules.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;Rule&gt;</a> <b>GetConflictList</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> test)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.GetConflictList(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>test</i>
+              </dt>
+              <dd>Whether do or do not test the rules.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.GetConflictList(System.Boolean):Returns">The list of the conflicting rules.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.GetConflictList(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.GetConflictList(System.Boolean):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.GetVariable(System.String)">GetVariable Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.GetVariable(System.String):member">
+          <div class="msummary">
+            Returns the variable having given name.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Variable.html">Variable</a> <b>GetVariable</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.GetVariable(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>The name of the variable.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.GetVariable(System.String):Returns">The variable having given name.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.GetVariable(System.String):Remarks">If existing variable is not found, creates a new one.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.GetVariable(System.String):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.GetVariableValue(System.String)">GetVariableValue Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.GetVariableValue(System.String):member">
+          <div class="msummary">
+            Returns the value of the variable.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetVariableValue</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.GetVariableValue(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>The name of the variable.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.GetVariableValue(System.String):Returns">The value of the variable.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.GetVariableValue(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.GetVariableValue(System.String):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:RuleBaseSystem.RuleBase.Name">Name Property</h3>
+        <blockquote id="P:RuleBaseSystem.RuleBase.Name:member">
+          <div class="msummary">
+            The name of this rule base.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Name</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:RuleBaseSystem.RuleBase.Name:Value">The name in string.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.RuleBase.Name:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.RuleBase.Name:Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.NewFact(RuleBaseSystem.Variable,System.Object)">NewFact Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.NewFact(RuleBaseSystem.Variable,System.Object):member">
+          <div class="msummary">
+            Creates a new fact and add it to this rulebase.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Fact.html">Fact</a> <b>NewFact</b> (<a href="../RuleBaseSystem/Variable.html">Variable</a> lhs, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> rhs)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewFact(RuleBaseSystem.Variable,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>lhs</i>
+              </dt>
+              <dd>Left hand side of the new fact.</dd>
+              <dt>
+                <i>rhs</i>
+              </dt>
+              <dd>Right hand side of the new fact.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewFact(RuleBaseSystem.Variable,System.Object):Returns">The new fact.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewFact(RuleBaseSystem.Variable,System.Object):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewFact(RuleBaseSystem.Variable,System.Object):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.NewRule(System.String)">NewRule Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.NewRule(System.String):member">
+          <div class="msummary">
+            Creates a new rule and adds it to this rulebase.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Rule.html">Rule</a> <b>NewRule</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> ruleName)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>ruleName</i>
+              </dt>
+              <dd>The name of the new rule.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String):Returns">The new rule.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause,RuleBaseSystem.Consequent)">NewRule Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause,RuleBaseSystem.Consequent):member">
+          <div class="msummary">
+            Creates a new rule and adds it to this rulebase.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Rule.html">Rule</a> <b>NewRule</b> (<a href="../RuleBaseSystem/Clause.html">Clause</a> antecedent, <a href="../RuleBaseSystem/Consequent.html">Consequent</a> consequent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause,RuleBaseSystem.Consequent):Parameters">
+            <dl>
+              <dt>
+                <i>antecedent</i>
+              </dt>
+              <dd>The antecedent of the new rule.</dd>
+              <dt>
+                <i>consequent</i>
+              </dt>
+              <dd>The consequent of the new rule.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause,RuleBaseSystem.Consequent):Returns">The new rule.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause,RuleBaseSystem.Consequent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause,RuleBaseSystem.Consequent):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause[],RuleBaseSystem.Consequent)">NewRule Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):member">
+          <div class="msummary">
+            Creates a new rule and adds it to this rulebase.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Rule.html">Rule</a> <b>NewRule</b> (<a href="../RuleBaseSystem/Clause.html">Clause</a>[] antecedents, <a href="../RuleBaseSystem/Consequent.html">Consequent</a> consequent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):Parameters">
+            <dl>
+              <dt>
+                <i>antecedents</i>
+              </dt>
+              <dd>The antecedents of the new rule.</dd>
+              <dt>
+                <i>consequent</i>
+              </dt>
+              <dd>The consequent of the new rule.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):Returns">The new rule.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause,RuleBaseSystem.Consequent)">NewRule Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause,RuleBaseSystem.Consequent):member">
+          <div class="msummary">
+            Creates a new rule and adds it to this rulebase.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Rule.html">Rule</a> <b>NewRule</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> ruleName, <a href="../RuleBaseSystem/Clause.html">Clause</a> antecedent, <a href="../RuleBaseSystem/Consequent.html">Consequent</a> consequent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause,RuleBaseSystem.Consequent):Parameters">
+            <dl>
+              <dt>
+                <i>ruleName</i>
+              </dt>
+              <dd>The name of the new rule.</dd>
+              <dt>
+                <i>antecedent</i>
+              </dt>
+              <dd>The antecedent of the new rule.</dd>
+              <dt>
+                <i>consequent</i>
+              </dt>
+              <dd>The consequent of the new rule.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause,RuleBaseSystem.Consequent):Returns">The new rule.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause,RuleBaseSystem.Consequent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause,RuleBaseSystem.Consequent):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause[],RuleBaseSystem.Consequent)">NewRule Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):member">
+          <div class="msummary">
+            Creates a new rule and adds it to this rulebase.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Rule.html">Rule</a> <b>NewRule</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> ruleName, <a href="../RuleBaseSystem/Clause.html">Clause</a>[] antecedents, <a href="../RuleBaseSystem/Consequent.html">Consequent</a> consequent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):Parameters">
+            <dl>
+              <dt>
+                <i>ruleName</i>
+              </dt>
+              <dd>The name of the new rule.</dd>
+              <dt>
+                <i>antecedents</i>
+              </dt>
+              <dd>The antecedents of the new rule.</dd>
+              <dt>
+                <i>consequent</i>
+              </dt>
+              <dd>The consequent of the new rule.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):Returns">The new rule.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.NewRule(System.String,RuleBaseSystem.Clause[],RuleBaseSystem.Consequent):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.PrintRules()">PrintRules Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.PrintRules():member">
+          <div class="msummary">
+            Writes the rules in this rule base to the console.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>PrintRules</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.PrintRules():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.PrintRules():Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.PrintVariables()">PrintVariables Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.PrintVariables():member">
+          <div class="msummary">
+            Writes the variables of this rule base to the console.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>PrintVariables</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.PrintVariables():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.PrintVariables():Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.Reset()">Reset Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.Reset():member">
+          <div class="msummary">
+            Resets variables, rules and facts in this rule base.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Reset</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.Reset():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.Reset():Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.SelectRule(System.Collections.Generic.List{RuleBaseSystem.Rule})">SelectRule Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.SelectRule(System.Collections.Generic.List{RuleBaseSystem.Rule}):member">
+          <div class="msummary">
+            Returns the rule having the most antecedents.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Rule.html">Rule</a> <b>SelectRule</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;Rule&gt;</a> ruleList)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.SelectRule(System.Collections.Generic.List{RuleBaseSystem.Rule}):Parameters">
+            <dl>
+              <dt>
+                <i>ruleList</i>
+              </dt>
+              <dd>List of rules.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.SelectRule(System.Collections.Generic.List{RuleBaseSystem.Rule}):Returns">The rule having the most antecedents.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.SelectRule(System.Collections.Generic.List{RuleBaseSystem.Rule}):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.SelectRule(System.Collections.Generic.List{RuleBaseSystem.Rule}):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.RuleBase.SetVariableValue(System.String,System.String)">SetVariableValue Method</h3>
+        <blockquote id="M:RuleBaseSystem.RuleBase.SetVariableValue(System.String,System.String):member">
+          <div class="msummary">
+            Sets the value of the variable.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetVariableValue</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.RuleBase.SetVariableValue(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>The name of the variable.</dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>The value of the variable.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.SetVariableValue(System.String,System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.RuleBase.SetVariableValue(System.String,System.String):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

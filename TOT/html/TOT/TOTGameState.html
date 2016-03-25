@@ -1,0 +1,1204 @@
+<html>
+  <head>
+    <title>TOT.TOTGameState</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">TOT</a> : <a href="index.html">TOT Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:TOT.TOTGameState">Overview</a>
+      </p>
+      <p>
+        <a href="#T:TOT.TOTGameState:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:TOT.TOTGameState:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:TOT.TOTGameState:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:TOT.TOTGameState">TOTGameState  Class</h1>
+    <p class="Summary" id="T:TOT.TOTGameState:Summary">
+            State of game.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:TOT.TOTGameState:Signature">public class  <b>TOTGameState</b></div>
+    </div>
+    <div class="Remarks" id="T:TOT.TOTGameState:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:TOT.TOTGameState:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:TOT.TOTGameState:Docs:Version Information">
+        <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:TOT.TOTGameState(AIWolf.Common.Net.GameInfo)">TOTGameState</a>
+                    </b>(<a href="../AIWolf.Common.Net/GameInfo.html">AIWolf.Common.Net.GameInfo</a>)</div>
+                </td>
+                <td>
+            Initializes a new instance of this class with game information.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.AddDivination(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge)">AddDivination</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="../AIWolf.Common.Data/Judge.html">AIWolf.Common.Data.Judge</a>)<blockquote>
+            Registers a new divination with the agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.AddInquest(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge)">AddInquest</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="../AIWolf.Common.Data/Judge.html">AIWolf.Common.Data.Judge</a>)<blockquote>
+            Register a new inquest with the agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.Attacked(AIWolf.Common.Data.Agent)">Attacked</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<blockquote>
+            Sets whether or not the given agent was attacked to true.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.DecTodaysVotes(AIWolf.Common.Data.Agent)">DecTodaysVotes</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<blockquote>
+            Decrements the given agent's vote for execution.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.GetAttackTarget(AIWolf.Common.Data.Agent)">GetAttackTarget</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a></nobr><blockquote>
+            Returns the agent which the given agent wants to attack.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.GetCoRole(AIWolf.Common.Data.Agent)">GetCoRole</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a></nobr><blockquote>
+            Returns the role which the given agent has come out with.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.GetLatestWhisper(AIWolf.Common.Data.Agent)">GetLatestWhisper</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="../AIWolf.Common.Data/Talk.html">AIWolf.Common.Data.Talk</a></nobr><blockquote>
+            Returns the latest whisper of the agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.GetRole(AIWolf.Common.Data.Agent)">GetRole</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a></nobr><blockquote>
+            Returns the role of the agent given. 
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.GetSpecies(AIWolf.Common.Data.Agent)">GetSpecies</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Species&gt;</a></nobr><blockquote>
+            Returns the species of agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.GetTeam(AIWolf.Common.Data.Agent)">GetTeam</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="../TOT/TOTeam.html">TOTeam</a></nobr><blockquote>
+            Returns the team of the agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.GetTodaysVotes(AIWolf.Common.Data.Agent)">GetTodaysVotes</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+            Returns the number of votes the given agent obtains today.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.GetVoteTarget(AIWolf.Common.Data.Agent)">GetVoteTarget</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a></nobr><blockquote>
+            Returns the agent which the given agent wants to vote.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.IncTodaysVotes(AIWolf.Common.Data.Agent)">IncTodaysVotes</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<blockquote>
+            Increments the given agent's vote for execution.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.IsMayBeExecuted(AIWolf.Common.Data.Agent)">IsMayBeExecuted</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Whether or not the given agent may be executed.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.MayBeExecuted(AIWolf.Common.Data.Agent,System.Boolean)">MayBeExecuted</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>
+            Sets whether or not the given agent may be executed.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.SetAttackTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent)">SetAttackTarget</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<blockquote>
+            Sets the agent which the given agent wants to attack.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.SetCoRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role})">SetCoRole</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a>)<blockquote>
+            Sets the role which the given agent has come out with.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.SetLatestTopic(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Client.Lib.Topic})">SetLatestTopic</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Client.Lib.Topic&gt;</a>)<blockquote>
+            Sets the latest topic of the agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.SetLatestWhisper(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Talk)">SetLatestWhisper</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="../AIWolf.Common.Data/Talk.html">AIWolf.Common.Data.Talk</a>)<blockquote>
+            Sets the latest whisper of the agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.SetRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role})">SetRole</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a>)<blockquote>
+            Sets the role of the agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.SetSpecies(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Species})">SetSpecies</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Species&gt;</a>)<blockquote>
+            Sets the species of the agent given.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.SetTodaysVotes(AIWolf.Common.Data.Agent,System.Int32)">SetTodaysVotes</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<blockquote>
+            Sets the number of votes the given agent obtains today.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.SetVoteTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent)">SetVoteTarget</a>
+                  </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>, <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)<blockquote>
+            Sets the agent which the given agent wants to vote.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTGameState.UpdateGameState()">UpdateGameState</a>
+                  </b>()<blockquote>
+            Updates the state of game.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:TOT.TOTGameState:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:TOT.TOTGameState(AIWolf.Common.Net.GameInfo)">TOTGameState Constructor</h3>
+        <blockquote id="C:TOT.TOTGameState(AIWolf.Common.Net.GameInfo):member">
+          <div class="msummary">
+            Initializes a new instance of this class with game information.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>TOTGameState</b> (<a href="../AIWolf.Common.Net/GameInfo.html">AIWolf.Common.Net.GameInfo</a> gameInfo)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:TOT.TOTGameState(AIWolf.Common.Net.GameInfo):Parameters">
+            <dl>
+              <dt>
+                <i>gameInfo</i>
+              </dt>
+              <dd>Game information.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:TOT.TOTGameState(AIWolf.Common.Net.GameInfo):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:TOT.TOTGameState(AIWolf.Common.Net.GameInfo):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.AddDivination(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge)">AddDivination Method</h3>
+        <blockquote id="M:TOT.TOTGameState.AddDivination(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge):member">
+          <div class="msummary">
+            Registers a new divination with the agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddDivination</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="../AIWolf.Common.Data/Judge.html">AIWolf.Common.Data.Judge</a> judge)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.AddDivination(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>judge</i>
+              </dt>
+              <dd>The divination to be registered.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.AddDivination(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.AddDivination(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.AddInquest(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge)">AddInquest Method</h3>
+        <blockquote id="M:TOT.TOTGameState.AddInquest(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge):member">
+          <div class="msummary">
+            Register a new inquest with the agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddInquest</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="../AIWolf.Common.Data/Judge.html">AIWolf.Common.Data.Judge</a> judge)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.AddInquest(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>judge</i>
+              </dt>
+              <dd>The inquest to be registered.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.AddInquest(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.AddInquest(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Judge):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.Attacked(AIWolf.Common.Data.Agent)">Attacked Method</h3>
+        <blockquote id="M:TOT.TOTGameState.Attacked(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Sets whether or not the given agent was attacked to true.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Attacked</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.Attacked(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.Attacked(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.Attacked(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.DecTodaysVotes(AIWolf.Common.Data.Agent)">DecTodaysVotes Method</h3>
+        <blockquote id="M:TOT.TOTGameState.DecTodaysVotes(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Decrements the given agent's vote for execution.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DecTodaysVotes</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.DecTodaysVotes(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.DecTodaysVotes(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.DecTodaysVotes(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.GetAttackTarget(AIWolf.Common.Data.Agent)">GetAttackTarget Method</h3>
+        <blockquote id="M:TOT.TOTGameState.GetAttackTarget(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Returns the agent which the given agent wants to attack.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> <b>GetAttackTarget</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetAttackTarget(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetAttackTarget(AIWolf.Common.Data.Agent):Returns">The agent which the given agent wants to attack.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetAttackTarget(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetAttackTarget(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.GetCoRole(AIWolf.Common.Data.Agent)">GetCoRole Method</h3>
+        <blockquote id="M:TOT.TOTGameState.GetCoRole(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Returns the role which the given agent has come out with.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a> <b>GetCoRole</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetCoRole(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetCoRole(AIWolf.Common.Data.Agent):Returns">the role which the given agent has come out with.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetCoRole(AIWolf.Common.Data.Agent):Remarks">Null if the agent has not come out with his role.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetCoRole(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.GetLatestWhisper(AIWolf.Common.Data.Agent)">GetLatestWhisper Method</h3>
+        <blockquote id="M:TOT.TOTGameState.GetLatestWhisper(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Returns the latest whisper of the agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../AIWolf.Common.Data/Talk.html">AIWolf.Common.Data.Talk</a> <b>GetLatestWhisper</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetLatestWhisper(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetLatestWhisper(AIWolf.Common.Data.Agent):Returns">The latest whisper of the agent given.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetLatestWhisper(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetLatestWhisper(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.GetRole(AIWolf.Common.Data.Agent)">GetRole Method</h3>
+        <blockquote id="M:TOT.TOTGameState.GetRole(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Returns the role of the agent given. 
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a> <b>GetRole</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetRole(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetRole(AIWolf.Common.Data.Agent):Returns">The role of the agent given.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetRole(AIWolf.Common.Data.Agent):Remarks">Null if uncertain.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetRole(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.GetSpecies(AIWolf.Common.Data.Agent)">GetSpecies Method</h3>
+        <blockquote id="M:TOT.TOTGameState.GetSpecies(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Returns the species of agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Species&gt;</a> <b>GetSpecies</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetSpecies(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetSpecies(AIWolf.Common.Data.Agent):Returns">The species of agent given.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetSpecies(AIWolf.Common.Data.Agent):Remarks">Null if uncertain.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetSpecies(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.GetTeam(AIWolf.Common.Data.Agent)">GetTeam Method</h3>
+        <blockquote id="M:TOT.TOTGameState.GetTeam(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Returns the team of the agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../TOT/TOTeam.html">TOTeam</a> <b>GetTeam</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetTeam(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetTeam(AIWolf.Common.Data.Agent):Returns">The team of the agent given.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetTeam(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetTeam(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.GetTodaysVotes(AIWolf.Common.Data.Agent)">GetTodaysVotes Method</h3>
+        <blockquote id="M:TOT.TOTGameState.GetTodaysVotes(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Returns the number of votes the given agent obtains today.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetTodaysVotes</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetTodaysVotes(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetTodaysVotes(AIWolf.Common.Data.Agent):Returns">The number of votes for execution the given agent obtains today.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetTodaysVotes(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetTodaysVotes(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.GetVoteTarget(AIWolf.Common.Data.Agent)">GetVoteTarget Method</h3>
+        <blockquote id="M:TOT.TOTGameState.GetVoteTarget(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Returns the agent which the given agent wants to vote.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> <b>GetVoteTarget</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetVoteTarget(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.GetVoteTarget(AIWolf.Common.Data.Agent):Returns">The agent which the given agent wants to vote.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetVoteTarget(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.GetVoteTarget(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.IncTodaysVotes(AIWolf.Common.Data.Agent)">IncTodaysVotes Method</h3>
+        <blockquote id="M:TOT.TOTGameState.IncTodaysVotes(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Increments the given agent's vote for execution.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>IncTodaysVotes</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.IncTodaysVotes(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.IncTodaysVotes(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.IncTodaysVotes(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.IsMayBeExecuted(AIWolf.Common.Data.Agent)">IsMayBeExecuted Method</h3>
+        <blockquote id="M:TOT.TOTGameState.IsMayBeExecuted(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Whether or not the given agent may be executed.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsMayBeExecuted</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.IsMayBeExecuted(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.IsMayBeExecuted(AIWolf.Common.Data.Agent):Returns">True if the given agent may be executed, otherwise, false.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.IsMayBeExecuted(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.IsMayBeExecuted(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.MayBeExecuted(AIWolf.Common.Data.Agent,System.Boolean)">MayBeExecuted Method</h3>
+        <blockquote id="M:TOT.TOTGameState.MayBeExecuted(AIWolf.Common.Data.Agent,System.Boolean):member">
+          <div class="msummary">
+            Sets whether or not the given agent may be executed.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>MayBeExecuted</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> mayBeExecuted)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.MayBeExecuted(AIWolf.Common.Data.Agent,System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>mayBeExecuted</i>
+              </dt>
+              <dd>True if the given agent may be executed, otherwise, false.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.MayBeExecuted(AIWolf.Common.Data.Agent,System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.MayBeExecuted(AIWolf.Common.Data.Agent,System.Boolean):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.SetAttackTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent)">SetAttackTarget Method</h3>
+        <blockquote id="M:TOT.TOTGameState.SetAttackTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Sets the agent which the given agent wants to attack.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetAttackTarget</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> target)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.SetAttackTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>target</i>
+              </dt>
+              <dd>The agent which the given agent wants to attack.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetAttackTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetAttackTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.SetCoRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role})">SetCoRole Method</h3>
+        <blockquote id="M:TOT.TOTGameState.SetCoRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role}):member">
+          <div class="msummary">
+            Sets the role which the given agent has come out with.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetCoRole</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a> role)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.SetCoRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role}):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>role</i>
+              </dt>
+              <dd>The role which the given agent has come out with.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetCoRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role}):Remarks">That role is null, means uncertain.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetCoRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role}):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.SetLatestTopic(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Client.Lib.Topic})">SetLatestTopic Method</h3>
+        <blockquote id="M:TOT.TOTGameState.SetLatestTopic(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Client.Lib.Topic}):member">
+          <div class="msummary">
+            Sets the latest topic of the agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetLatestTopic</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Client.Lib.Topic&gt;</a> topic)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.SetLatestTopic(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Client.Lib.Topic}):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>topic</i>
+              </dt>
+              <dd>The latest topic of the agent given.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetLatestTopic(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Client.Lib.Topic}):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetLatestTopic(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Client.Lib.Topic}):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.SetLatestWhisper(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Talk)">SetLatestWhisper Method</h3>
+        <blockquote id="M:TOT.TOTGameState.SetLatestWhisper(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Talk):member">
+          <div class="msummary">
+            Sets the latest whisper of the agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetLatestWhisper</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="../AIWolf.Common.Data/Talk.html">AIWolf.Common.Data.Talk</a> whisper)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.SetLatestWhisper(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Talk):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>whisper</i>
+              </dt>
+              <dd>The latest whisper of the agent given.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetLatestWhisper(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Talk):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetLatestWhisper(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Talk):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.SetRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role})">SetRole Method</h3>
+        <blockquote id="M:TOT.TOTGameState.SetRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role}):member">
+          <div class="msummary">
+            Sets the role of the agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetRole</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a> role)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.SetRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role}):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>role</i>
+              </dt>
+              <dd>The role of the agent given.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role}):Remarks">That role is null, means uncertain.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetRole(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Role}):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.SetSpecies(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Species})">SetSpecies Method</h3>
+        <blockquote id="M:TOT.TOTGameState.SetSpecies(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Species}):member">
+          <div class="msummary">
+            Sets the species of the agent given.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetSpecies</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Species&gt;</a> species)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.SetSpecies(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Species}):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>species</i>
+              </dt>
+              <dd>The species of the agent given.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetSpecies(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Species}):Remarks">That species is null, means uncertain.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetSpecies(AIWolf.Common.Data.Agent,System.Nullable{AIWolf.Common.Data.Species}):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.SetTodaysVotes(AIWolf.Common.Data.Agent,System.Int32)">SetTodaysVotes Method</h3>
+        <blockquote id="M:TOT.TOTGameState.SetTodaysVotes(AIWolf.Common.Data.Agent,System.Int32):member">
+          <div class="msummary">
+            Sets the number of votes the given agent obtains today.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetTodaysVotes</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> todaysVotes)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.SetTodaysVotes(AIWolf.Common.Data.Agent,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>todaysVotes</i>
+              </dt>
+              <dd>The number of votes for execution the given agent obtains today.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetTodaysVotes(AIWolf.Common.Data.Agent,System.Int32):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetTodaysVotes(AIWolf.Common.Data.Agent,System.Int32):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.SetVoteTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent)">SetVoteTarget Method</h3>
+        <blockquote id="M:TOT.TOTGameState.SetVoteTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Sets the agent which the given agent wants to vote.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetVoteTarget</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> agent, <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> target)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTGameState.SetVoteTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>agent</i>
+              </dt>
+              <dd>Agent.</dd>
+              <dt>
+                <i>target</i>
+              </dt>
+              <dd>The agent which the given agent wants to vote.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetVoteTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.SetVoteTarget(AIWolf.Common.Data.Agent,AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTGameState.UpdateGameState()">UpdateGameState Method</h3>
+        <blockquote id="M:TOT.TOTGameState.UpdateGameState():member">
+          <div class="msummary">
+            Updates the state of game.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UpdateGameState</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.UpdateGameState():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTGameState.UpdateGameState():Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

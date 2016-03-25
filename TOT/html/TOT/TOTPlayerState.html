@@ -1,0 +1,864 @@
+<html>
+  <head>
+    <title>TOT.TOTPlayerState</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">TOT</a> : <a href="index.html">TOT Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:TOT.TOTPlayerState">Overview</a>
+      </p>
+      <p>
+        <a href="#T:TOT.TOTPlayerState:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:TOT.TOTPlayerState:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:TOT.TOTPlayerState:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:TOT.TOTPlayerState">TOTPlayerState  Class</h1>
+    <p class="Summary" id="T:TOT.TOTPlayerState:Summary">
+            Player's state.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:TOT.TOTPlayerState:Signature">public class  <b>TOTPlayerState</b></div>
+    </div>
+    <div class="Remarks" id="T:TOT.TOTPlayerState:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:TOT.TOTPlayerState:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:TOT.TOTPlayerState:Docs:Version Information">
+        <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:TOT.TOTPlayerState(AIWolf.Common.Data.Agent)">TOTPlayerState</a>
+                    </b>(<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>)</div>
+                </td>
+                <td>
+            Initializes a new instance of this class.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.Attacked">Attacked</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+            Whether or not I was attacked.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.AttackTarget">AttackTarget</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>
+                  </i>. 
+            The player I want to attack.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.CoRole">CoRole</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a>
+                  </i>. 
+            The role I have come out with.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.LatestTopic">LatestTopic</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Client.Lib.Topic&gt;</a>
+                  </i>. 
+            The latest topic I talked about.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.LatestWhisper">LatestWhisper</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../AIWolf.Common.Data/Talk.html">AIWolf.Common.Data.Talk</a>
+                  </i>. 
+            My latest whisper.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.MayBeExecuted">MayBeExecuted</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+            Whether or not I may be executed.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.Me">Me</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>
+                  </i>. 
+            Me.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.Role">Role</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a>
+                  </i>. 
+            My role.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.Species">Species</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Species&gt;</a>
+                  </i>. 
+            My species.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.Status">Status</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../AIWolf.Common.Data/Status.html">AIWolf.Common.Data.Status</a>
+                  </i>. 
+            Whether I am alive or dead.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.Team">Team</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../TOT/TOTeam.html">TOTeam</a>
+                  </i>. 
+            My team.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.TodaysVotes">TodaysVotes</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. 
+            The number of votes for execution I obtain today.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:TOT.TOTPlayerState.VoteTarget">VoteTarget</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a>
+                  </i>. 
+            The player I want to vote.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTPlayerState.AddDivination(AIWolf.Common.Data.Judge)">AddDivination</a>
+                  </b>(<a href="../AIWolf.Common.Data/Judge.html">AIWolf.Common.Data.Judge</a>)<blockquote>
+            Resisters a new divination.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTPlayerState.AddInquest(AIWolf.Common.Data.Judge)">AddInquest</a>
+                  </b>(<a href="../AIWolf.Common.Data/Judge.html">AIWolf.Common.Data.Judge</a>)<blockquote>
+            Registers a new inquest.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTPlayerState.DecTodaysVotes()">DecTodaysVotes</a>
+                  </b>()<blockquote>
+            Decrements my vote for execution.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:TOT.TOTPlayerState.IncTodaysVotes()">IncTodaysVotes</a>
+                  </b>()<blockquote>
+            Increments my vote for execution.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:TOT.TOTPlayerState:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:TOT.TOTPlayerState(AIWolf.Common.Data.Agent)">TOTPlayerState Constructor</h3>
+        <blockquote id="C:TOT.TOTPlayerState(AIWolf.Common.Data.Agent):member">
+          <div class="msummary">
+            Initializes a new instance of this class.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>TOTPlayerState</b> (<a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> me)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:TOT.TOTPlayerState(AIWolf.Common.Data.Agent):Parameters">
+            <dl>
+              <dt>
+                <i>me</i>
+              </dt>
+              <dd>The owner of this state.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:TOT.TOTPlayerState(AIWolf.Common.Data.Agent):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:TOT.TOTPlayerState(AIWolf.Common.Data.Agent):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTPlayerState.AddDivination(AIWolf.Common.Data.Judge)">AddDivination Method</h3>
+        <blockquote id="M:TOT.TOTPlayerState.AddDivination(AIWolf.Common.Data.Judge):member">
+          <div class="msummary">
+            Resisters a new divination.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddDivination</b> (<a href="../AIWolf.Common.Data/Judge.html">AIWolf.Common.Data.Judge</a> judge)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTPlayerState.AddDivination(AIWolf.Common.Data.Judge):Parameters">
+            <dl>
+              <dt>
+                <i>judge</i>
+              </dt>
+              <dd>The divination to be registered.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTPlayerState.AddDivination(AIWolf.Common.Data.Judge):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTPlayerState.AddDivination(AIWolf.Common.Data.Judge):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTPlayerState.AddInquest(AIWolf.Common.Data.Judge)">AddInquest Method</h3>
+        <blockquote id="M:TOT.TOTPlayerState.AddInquest(AIWolf.Common.Data.Judge):member">
+          <div class="msummary">
+            Registers a new inquest.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddInquest</b> (<a href="../AIWolf.Common.Data/Judge.html">AIWolf.Common.Data.Judge</a> judge)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:TOT.TOTPlayerState.AddInquest(AIWolf.Common.Data.Judge):Parameters">
+            <dl>
+              <dt>
+                <i>judge</i>
+              </dt>
+              <dd>The inquest to be registered.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTPlayerState.AddInquest(AIWolf.Common.Data.Judge):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTPlayerState.AddInquest(AIWolf.Common.Data.Judge):Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.Attacked">Attacked Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.Attacked:member">
+          <div class="msummary">
+            Whether or not I was attacked.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Attacked</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.Attacked:Value">True or false.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Attacked:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Attacked:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.AttackTarget">AttackTarget Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.AttackTarget:member">
+          <div class="msummary">
+            The player I want to attack.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> <b>AttackTarget</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.AttackTarget:Value">The player I want to attack.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.AttackTarget:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.AttackTarget:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.CoRole">CoRole Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.CoRole:member">
+          <div class="msummary">
+            The role I have come out with.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a> <b>CoRole</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.CoRole:Value">Role.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.CoRole:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.CoRole:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTPlayerState.DecTodaysVotes()">DecTodaysVotes Method</h3>
+        <blockquote id="M:TOT.TOTPlayerState.DecTodaysVotes():member">
+          <div class="msummary">
+            Decrements my vote for execution.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DecTodaysVotes</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTPlayerState.DecTodaysVotes():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTPlayerState.DecTodaysVotes():Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:TOT.TOTPlayerState.IncTodaysVotes()">IncTodaysVotes Method</h3>
+        <blockquote id="M:TOT.TOTPlayerState.IncTodaysVotes():member">
+          <div class="msummary">
+            Increments my vote for execution.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>IncTodaysVotes</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:TOT.TOTPlayerState.IncTodaysVotes():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:TOT.TOTPlayerState.IncTodaysVotes():Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.LatestTopic">LatestTopic Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.LatestTopic:member">
+          <div class="msummary">
+            The latest topic I talked about.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Client.Lib.Topic&gt;</a> <b>LatestTopic</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.LatestTopic:Value">The latest topic I talked about.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.LatestTopic:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.LatestTopic:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.LatestWhisper">LatestWhisper Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.LatestWhisper:member">
+          <div class="msummary">
+            My latest whisper.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../AIWolf.Common.Data/Talk.html">AIWolf.Common.Data.Talk</a> <b>LatestWhisper</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.LatestWhisper:Value">My latest whisper.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.LatestWhisper:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.LatestWhisper:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.MayBeExecuted">MayBeExecuted Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.MayBeExecuted:member">
+          <div class="msummary">
+            Whether or not I may be executed.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>MayBeExecuted</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.MayBeExecuted:Value">True or false.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.MayBeExecuted:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.MayBeExecuted:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.Me">Me Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.Me:member">
+          <div class="msummary">
+            Me.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> <b>Me</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.Me:Value">The player having this state.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Me:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Me:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.Role">Role Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.Role:member">
+          <div class="msummary">
+            My role.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Role&gt;</a> <b>Role</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.Role:Value">Role.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Role:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Role:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.Species">Species Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.Species:member">
+          <div class="msummary">
+            My species.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;AIWolf.Common.Data.Species&gt;</a> <b>Species</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.Species:Value">Species.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Species:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Species:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.Status">Status Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.Status:member">
+          <div class="msummary">
+            Whether I am alive or dead.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../AIWolf.Common.Data/Status.html">AIWolf.Common.Data.Status</a> <b>Status</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.Status:Value">ALIVE or DEAD.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Status:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Status:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.Team">Team Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.Team:member">
+          <div class="msummary">
+            My team.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../TOT/TOTeam.html">TOTeam</a> <b>Team</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.Team:Value">TOTeam.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Team:Remarks">UNC if uncertain.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.Team:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.TodaysVotes">TodaysVotes Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.TodaysVotes:member">
+          <div class="msummary">
+            The number of votes for execution I obtain today.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>TodaysVotes</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.TodaysVotes:Value">The number of votes for execution I obtain today.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.TodaysVotes:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.TodaysVotes:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:TOT.TOTPlayerState.VoteTarget">VoteTarget Property</h3>
+        <blockquote id="P:TOT.TOTPlayerState.VoteTarget:member">
+          <div class="msummary">
+            The player I want to vote.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../AIWolf.Common.Data/Agent.html">AIWolf.Common.Data.Agent</a> <b>VoteTarget</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:TOT.TOTPlayerState.VoteTarget:Value">The player I want to vote.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.VoteTarget:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:TOT.TOTPlayerState.VoteTarget:Version Information">
+            <b>Namespace: </b>TOT<br /><b>Assembly: </b>TOT (in TOT.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

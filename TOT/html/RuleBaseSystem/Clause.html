@@ -1,0 +1,570 @@
+<html>
+  <head>
+    <title>RuleBaseSystem.Clause</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">RuleBaseSystem</a> : <a href="index.html">RuleBaseSystem Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:RuleBaseSystem.Clause">Overview</a>
+      </p>
+      <p>
+        <a href="#T:RuleBaseSystem.Clause:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:RuleBaseSystem.Clause:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:RuleBaseSystem.Clause:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:RuleBaseSystem.Clause">Clause  Class</h1>
+    <p class="Summary" id="T:RuleBaseSystem.Clause:Summary">
+            Clause class.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:RuleBaseSystem.Clause:Signature">public class  <b>Clause</b></div>
+    </div>
+    <div class="Remarks" id="T:RuleBaseSystem.Clause:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:RuleBaseSystem.Clause:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:RuleBaseSystem.Clause:Docs:Version Information">
+        <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,RuleBaseSystem.Variable)">Clause</a>
+                    </b>(<a href="../RuleBaseSystem/Variable.html">Variable</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../RuleBaseSystem/Variable.html">Variable</a>)</div>
+                </td>
+                <td>
+            Initializes  a new instance of this class.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,System.String)">Clause</a>
+                    </b>(<a href="../RuleBaseSystem/Variable.html">Variable</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                </td>
+                <td>
+            Initializes  a new instance of this class.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:RuleBaseSystem.Clause.Lhs">Lhs</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../RuleBaseSystem/Variable.html">Variable</a>
+                  </i>. 
+            Left hand side.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:RuleBaseSystem.Clause.Rhs">Rhs</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>
+                  </i>. 
+            Right hand side.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:RuleBaseSystem.Clause.Rules">Rules</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;Rule&gt;</a>
+                  </i>. 
+            The rules having this clause.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:RuleBaseSystem.Clause.Truth">Truth</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;bool&gt;</a>
+                  </i>. 
+            Truth value of clause.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.Clause.AddRule(RuleBaseSystem.Rule)">AddRule</a>
+                  </b>(<a href="../RuleBaseSystem/Rule.html">Rule</a>)<blockquote>
+            Registers a rule.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.Clause.Test()">Test</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;bool&gt;</a></nobr><blockquote>
+            Tests this clause.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:RuleBaseSystem.Clause.ToString()">ToString</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Returns the string representing this clause.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:RuleBaseSystem.Clause:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,RuleBaseSystem.Variable)">Clause Constructor</h3>
+        <blockquote id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,RuleBaseSystem.Variable):member">
+          <div class="msummary">
+            Initializes  a new instance of this class.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>Clause</b> (<a href="../RuleBaseSystem/Variable.html">Variable</a> lhs, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> condition, <a href="../RuleBaseSystem/Variable.html">Variable</a> rhs)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,RuleBaseSystem.Variable):Parameters">
+            <dl>
+              <dt>
+                <i>lhs</i>
+              </dt>
+              <dd>Left hand side variable.</dd>
+              <dt>
+                <i>condition</i>
+              </dt>
+              <dd>Condition.</dd>
+              <dt>
+                <i>rhs</i>
+              </dt>
+              <dd>Left hand side variable.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,RuleBaseSystem.Variable):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,RuleBaseSystem.Variable):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,System.String)">Clause Constructor</h3>
+        <blockquote id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,System.String):member">
+          <div class="msummary">
+            Initializes  a new instance of this class.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>Clause</b> (<a href="../RuleBaseSystem/Variable.html">Variable</a> lhs, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> condition, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> rhs)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>lhs</i>
+              </dt>
+              <dd>Left hand side variable.</dd>
+              <dt>
+                <i>condition</i>
+              </dt>
+              <dd>Condition.</dd>
+              <dt>
+                <i>rhs</i>
+              </dt>
+              <dd>Right hand side value.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:RuleBaseSystem.Clause(RuleBaseSystem.Variable,System.String,System.String):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.Clause.AddRule(RuleBaseSystem.Rule)">AddRule Method</h3>
+        <blockquote id="M:RuleBaseSystem.Clause.AddRule(RuleBaseSystem.Rule):member">
+          <div class="msummary">
+            Registers a rule.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddRule</b> (<a href="../RuleBaseSystem/Rule.html">Rule</a> rule)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.Clause.AddRule(RuleBaseSystem.Rule):Parameters">
+            <dl>
+              <dt>
+                <i>rule</i>
+              </dt>
+              <dd>The rule to be registered.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.Clause.AddRule(RuleBaseSystem.Rule):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.Clause.AddRule(RuleBaseSystem.Rule):Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:RuleBaseSystem.Clause.Lhs">Lhs Property</h3>
+        <blockquote id="P:RuleBaseSystem.Clause.Lhs:member">
+          <div class="msummary">
+            Left hand side.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../RuleBaseSystem/Variable.html">Variable</a> <b>Lhs</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:RuleBaseSystem.Clause.Lhs:Value">Variable.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.Clause.Lhs:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.Clause.Lhs:Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:RuleBaseSystem.Clause.Rhs">Rhs Property</h3>
+        <blockquote id="P:RuleBaseSystem.Clause.Rhs:member">
+          <div class="msummary">
+            Right hand side.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> <b>Rhs</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:RuleBaseSystem.Clause.Rhs:Value">Variable or value.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.Clause.Rhs:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.Clause.Rhs:Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:RuleBaseSystem.Clause.Rules">Rules Property</h3>
+        <blockquote id="P:RuleBaseSystem.Clause.Rules:member">
+          <div class="msummary">
+            The rules having this clause.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;Rule&gt;</a> <b>Rules</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:RuleBaseSystem.Clause.Rules:Value">List of rules.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.Clause.Rules:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.Clause.Rules:Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.Clause.Test()">Test Method</h3>
+        <blockquote id="M:RuleBaseSystem.Clause.Test():member">
+          <div class="msummary">
+            Tests this clause.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;bool&gt;</a> <b>Test</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.Clause.Test():Returns">True or false.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.Clause.Test():Remarks">Null if impossible.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.Clause.Test():Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:RuleBaseSystem.Clause.ToString()">ToString Method</h3>
+        <blockquote id="M:RuleBaseSystem.Clause.ToString():member">
+          <div class="msummary">
+            Returns the string representing this clause.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:RuleBaseSystem.Clause.ToString():Returns">The string representating this clause.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.Clause.ToString():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:RuleBaseSystem.Clause.ToString():Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:RuleBaseSystem.Clause.Truth">Truth Property</h3>
+        <blockquote id="P:RuleBaseSystem.Clause.Truth:member">
+          <div class="msummary">
+            Truth value of clause.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;bool&gt;</a> <b>Truth</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:RuleBaseSystem.Clause.Truth:Value">True or false.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.Clause.Truth:Remarks">Null if untested.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:RuleBaseSystem.Clause.Truth:Version Information">
+            <b>Namespace: </b>RuleBaseSystem<br /><b>Assembly: </b>RuleBaseSystem (in RuleBaseSystem.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
