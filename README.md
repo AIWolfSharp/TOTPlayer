@@ -10,5 +10,5 @@ AIWolf player agent TOTPlayer, a participant in GAT2016 mini competition.
 1. For example,
 
 ```
-ClientStarter.exe -h localhost -p 10000 -c TOT.TOTPlayer.dll TOTv47m.dll
+ClientStarter.exe -h localhost -p 10000 -c TOT.TOTPlayer TOTv47m.dll
 ```
