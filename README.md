@@ -12,3 +12,8 @@ AIWolf player agent TOTPlayer, a participant in GAT2016 mini competition.
 ```
 ClientStarter.exe -h localhost -p 10000 -c TOT.TOTPlayer TOTv47m.dll
 ```
+
+## Algorithm
+
+The document(sorry, in Japanese) of the algorithm TOTPlayer uses,
+can be downloaded from [here](https://github.com/AIWolfSharp/TOTPlayer/releases/download/v4.7/TOTPlayer.pdf).
